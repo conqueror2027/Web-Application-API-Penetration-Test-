@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login | Horizon University</title>
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body data-page="student-login">
+  <header class="navbar">
+    <a class="logo" href="index.html">
+      <span class="logo-mark" data-icon="cap"></span>
+      <span>Horizon University<small>Student Portal</small></span>
+    </a>
+  </header>
+
+  <div class="center-page">
+    <form class="card login-card" id="login-form" novalidate>
+      <div class="login-header">
+        <div class="login-icon" data-icon="user"></div>
+        <h2>Student Login</h2>
+        <p class="hint">Sign in to access your student portal</p>
+      </div>
+      <label class="field">
+        <span>Student ID / Email</span>
+        <input name="identifier" autocomplete="username" placeholder="e.g. STU001">
+      </label>
+      <label class="field">
+        <span>Password</span>
+        <input name="password" type="password" autocomplete="current-password" placeholder="Enter your password">
+      </label>
+      <p class="error" id="login-error"></p>
+      <button class="btn btn-lg" type="submit">Login</button>
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </form>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/student.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
